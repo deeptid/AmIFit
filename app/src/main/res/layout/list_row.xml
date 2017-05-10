@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip">
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="7dp"
+            android:layout_height="10dip"
+            android:src="@drawable/circle"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+    <!-- Title Of Song-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Title"
+        android:textColor="#515050"
+        android:typeface="sans"
+        android:textSize="17dip"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp" />
+
+    Artist Name
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:textColor="#666565"
+        android:textSize="12dip"
+        android:layout_marginTop="1dip"
+        android:layout_marginBottom="5dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Just gona stand there and ..."
+        android:layout_marginLeft="10dp" />
+
+    <ImageView
+        android:id="@+id/menu_overflow"
+        android:layout_width="50dp"
+        android:layout_height="10dip"
+        android:padding="3dp"
+        android:src="@drawable/icon_overflow"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/title"
+        android:layout_above="@+id/description" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 min"
+        android:textColor="#515050"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_alignTop="@+id/menu_overflow"
+        android:layout_toLeftOf="@+id/menu_overflow"
+        android:layout_toStartOf="@+id/menu_overflow"
+        android:layout_marginEnd="15dp" />
+
+
+    <!--<Chronometer-->
+    <!--android:id="@+id/jackChronometer"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/description"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:background="#000"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="10dp"-->
+    <!--android:textColor="#f00"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/startButton"-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="35dp"-->
+        <!--android:text="start"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--android:background="@drawable/rounded_button"-->
+        <!--android:layout_toRightOf="@+id/thumbnail"-->
+        <!--android:layout_toEndOf="@+id/thumbnail"-->
+        <!--android:layout_alignBottom="@+id/stopButton"-->
+        <!--android:layout_alignTop="@+id/jackChronometer" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/stopButton"-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="35dp"-->
+        <!--android:text="stop"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--android:background="@drawable/rounded_button"-->
+        <!--android:layout_marginRight="39dp"-->
+        <!--android:layout_marginEnd="39dp"-->
+        <!--android:layout_alignTop="@+id/jackChronometer"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true" />-->
+
+
+    <!--&lt;!&ndash; Rightend Arrow &ndash;&gt;-->
+    <!--<ImageView android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/arrow"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"/>-->
+
+</RelativeLayout>

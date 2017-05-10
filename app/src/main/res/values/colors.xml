@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#67d431</color>
+    <color name="colorPrimaryDark">#3fa10f</color>
+    <color name="primary_dark">#3fa10f</color>
+    <color name="colorAccent">#3fa10f</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlue">#080a8e</color>
+    <color name="colorCream">#fdf6dd</color>
+
+    <!--Gradient colors -->
+    <color name="grad1">#2980b9</color>
+    <color name="grad2">#c0392b</color>
+    <color name="grad3">#e67e22</color>
+    <color name="grad4">#1abc9c</color>
+    <color name="grad5">#e74c3c</color>
+    <color name="grad6">#4192c9</color>
+    <color name="grad7">#f39c12</color>
+    <color name="grad8">#16a085</color>
+    <color name="grad9">#d4152b</color>
+    <color name="grad10">#f1c40f</color>
+    <color name="grad11">#2ecc71</color>
+    <color name="grad12">#16a085</color>
+    <color name="grad13">#d35400</color>
+    <color name="grad14">#1ebcce</color>
+    <color name="grad15">#7dce21</color>
+</resources>

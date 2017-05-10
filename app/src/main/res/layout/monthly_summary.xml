@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:clickable="true">
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:background="@drawable/back_workout"-->
+        <!--android:clickable="true"-->
+        <!--android:alpha="0.4">-->
+        <!--</RelativeLayout>-->
+
+        <TextView
+            android:id="@+id/detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:text="Weekly Average Steps"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/no_of_steps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="steps"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="70dp" />
+
+
+        <TextView
+            android:id="@+id/pie_title"
+            android:text="Title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/no_of_steps"
+            android:textColor="@color/colorPrimaryDark"/>
+        <com.shinobicontrols.charts.ChartView
+            android:id="@+id/piechart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chartview_height"
+            android:layout_below="@+id/pie_title" />
+
+        <TextView
+            android:id="@+id/weight_title"
+            android:text="Title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/piechart"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <com.shinobicontrols.charts.ChartView
+            android:id="@+id/weight_chart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chartview_height"
+            android:layout_below="@+id/weight_title" />
+
+        <TextView
+            android:id="@+id/steps_daily_title"
+            android:text="Title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/weight_chart"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <com.shinobicontrols.charts.ChartView
+            android:id="@+id/sh_daily_chart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chartview_height"
+            android:layout_below="@+id/steps_daily_title" />
+        <TextView
+            android:id="@+id/steps_weekly_title"
+            android:text="Title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/sh_daily_chart"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <com.shinobicontrols.charts.ChartView
+            android:id="@+id/sh_weekly_chart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chartview_height"
+            android:layout_below="@+id/steps_weekly_title" />
+
+        <TextView
+            android:id="@+id/steps_monthly_title"
+            android:text="Title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/sh_weekly_chart"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <com.shinobicontrols.charts.ChartView
+            android:id="@+id/sh_monthly_chart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chartview_height"
+            android:layout_below="@+id/steps_monthly_title" />
+
+        <!--<TableRow-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/graph_chart"-->
+            <!--android:layout_centerHorizontal="true">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/image_weekly"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dip"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:src="@drawable/calender_weekly_state" />-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/image_monthly"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dip"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:src="@drawable/calender_monthly_state" />-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/image_yearly"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dip"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:src="@drawable/calender_yearly_state" />-->
+        <!--</TableRow>-->
+
+        <!--<com.jjoe64.graphview.GraphView-->
+            <!--android:id="@+id/graph_chart"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="250dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_below="@+id/shchart"-->
+            <!--android:layout_marginTop="16dp" />-->
+
+        <!--<com.github.mikephil.charting.charts.BarChart-->
+        <!--android:id="@+id/monthly_chart"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="250dp"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:textAlignment="center"-->
+        <!--android:layout_below="@+id/no_of_steps"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+
+    </RelativeLayout>
+</ScrollView>

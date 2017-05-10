@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="@string/home"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/days_summary"
+        android:icon="@drawable/report_gimp"
+        android:title="@string/day"
+        app:showAsAction="never" />
+
+    <!-- Settings, should always be in the overflow -->
+    <item
+        android:id="@+id/monthly_summary"
+        android:title="@string/monthly"
+        android:icon="@drawable/summary"
+        app:showAsAction="never" />
+    <!--<item-->
+        <!--android:id="@+id/overall_summary"-->
+        <!--android:title="@string/over_all"-->
+        <!--app:showAsAction="never" />-->
+
+    <item
+        android:id="@+id/workouts"
+        android:title="@string/workouts"
+        android:icon="@drawable/workouts"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/workout_plan"
+        android:title="@string/workout_plan"
+        android:icon="@drawable/weekly"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/todays_workout"
+        android:title="@string/todays_workout"
+        android:icon="@drawable/todays"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/todays_challenge"
+        android:title="@string/todays_challenge"
+        android:icon="@drawable/cup_gimp"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/pedometer_setting"
+        android:title="@string/pedometer_settings"
+        android:icon="@drawable/pedometer_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/reminder"
+        android:title="@string/reminder_settings"
+        android:icon="@drawable/reminder"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/more"
+        android:title="@string/more"
+        android:icon="@drawable/more_gimp"
+        app:showAsAction="never" />
+
+</menu>

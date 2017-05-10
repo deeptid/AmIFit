@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">AmIfit</string>
+    <string name="enter_steps">Enter your Steps</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="monthly">Statistics</string>
+    <string name="day">Today\'s Summary</string>
+    <string name="over_all">Overall Summary</string>
+    <string name="workouts">Workouts</string>
+    <string name="workout_plan">My Weekly Workout Plan</string>
+    <string name="todays_workout">Today\'s Workout Plan</string>
+    <string name="pedometer_settings">Pedometer Settings</string>
+    <string name="reminder_settings">Reminder</string>
+    <string name="more">More</string>
+    <string name="profile_settings">Profile Settings</string>
+    <string name="name">You are awesome!</string>
+    <string name="todays_challenge">Today\'s Challenge</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+
+
+
+    <string name="delete">Delete</string>
+    <string name="change_time">Change time</string>
+    <string name="btn_change_manual">Change to manual</string>
+    <string name="change_to_pedometer_title">Use Pedometer</string>
+    <string name="change_to_manual_title">Use Manual</string>
+    <string name="change_to_pedometer">Currently you are manually entering your Steps. Do you want to use device pedometer to count your steps ?</string>
+    <string name="change_to_manual">Currently you are using Pedometer to count Steps. Do you want to enter steps manually ?</string>
+
+    <string name="started">Pedometer started</string>
+    <string name="stopped">Pedometer stopped</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!--Preference Strings-->
+    <string name="pref_steps">ifsteps</string>
+    <string name="pref_steps_title">Enable Steps Reminder?</string>
+    <string name="pref_steps_time">10:00 am</string>
+
+    <string name="pref_change_steps_title">Log Steps</string>
+    <string name="time_steps_title">Reminder Time</string>
+    <string name="change_steps_time_default"> 10:00 am</string>
+
+    <string name="text_steps_reminder_title"> Text of the reminder</string>
+    <string name="text_steps_reminder"> Don\'t forget to log today\'s steps in the app!</string>
+
+<!--Workout-->
+    <string name="pref_workout">ifworkout</string>
+    <string name="pref_workout_title">Enable Workout Reminder?</string>
+    <string name="pref_workout_time"> 10:00 am</string>
+
+    <string name="pref_change_workout_title">Workout Reminder</string>
+    <string name="time_workout_title">Reminder Time</string>
+    <string name="change_workout_time_default">disabled</string>
+
+    <string name="text_workout_reminder_title"> Text of the reminder</string>
+    <string name="text_workout_reminder"> Workout pending for the day</string>
+
+    <!--Weight-->
+    <string name="pref_weight">ifweight</string>
+    <string name="pref_weight_title">Enable Weight Reminder?</string>
+    <string name="pref_weight_time"> 10:00 am</string>
+
+    <string name="pref_change_weight_title">Log Weight</string>
+    <string name="time_weight_title">Reminder Time</string>
+    <string name="change_weight_time_default">disabled</string>
+
+    <string name="text_weight_reminder_title"> Text of the reminder</string>
+    <string name="text_weight_reminder"> Don\'t forget to log your today\'s weight in the app</string>
+
+    <!--Walk Break-->
+    <string name="pref_walk">ifwalk</string>
+    <string name="pref_walk_title">Enable Walk Reminder?</string>
+    <string name="pref_walk_time"> 8:00 am</string>
+
+    <string name="pref_change_walk_title">Remind to walk</string>
+    <string name="time_walk_title">Reminder Time</string>
+    <string name="change_walk_time_default">disabled</string>
+
+    <string name="text_walk_reminder_title"> Text of the reminder</string>
+    <string name="text_walk_reminder"> Take a break. Go for a walk</string>
+
+    <!--Water-->
+    <string name="pref_water">ifwater</string>
+    <string name="pref_water_title">Enable Water Reminder?</string>
+    <string name="pref_water_time"> 8:00 am</string>
+
+    <string name="pref_change_water_title">Remind to drink</string>
+    <string name="time_water_title">Reminder Time</string>
+    <string name="change_water_time_default">disabled</string>
+
+    <string name="text_water_reminder_title">Text of the reminder</string>
+    <string name="text_water_reminder">Take a break. Drink a glass of water</string>
+
+    <string name="default_walk_time">Every 2 hour</string>
+    <string name="default_water_time">Every 2 hour</string>
+
+    <!--EveryDay Challenge-->
+    <string name="day_1">30 push ups</string>
+    <string name="day_2">30 squats</string>
+    <string name="day_3">2 min Plank</string>
+    <string name="day_4">20 crunches</string>
+    <string name="day_5">20 lunges</string>
+    <string name="day_6">100 jumps on skipping rope</string>
+    <string name="day_7">20 minutes walk</string>
+    <string name="day_8">10 minutes run</string>
+    <string name="day_9">30 push ups</string>
+    <string name="day_10">20 seconds side plank</string>
+    <string name="day_11">30 seconds Superman</string>
+    <string name="day_12">30 push ups</string>
+    <string name="day_13">30 squats</string>
+    <string name="day_14">2 min Plank</string>
+    <string name="day_15">20 crunches</string>
+    <string name="day_16">20 lunges</string>
+    <string name="day_17">100 jumps on skipping rope</string>
+    <string name="day_18">20 minutes walk</string>
+    <string name="day_19">10 minutes run</string>
+    <string name="day_20">30 push ups</string>
+    <string name="day_21">20 seconds side plank</string>
+    <string name="day_22">30 seconds Superman</string>
+    <string name="day_23">30 push ups</string>
+    <string name="day_24">30 squats</string>
+    <string name="day_25">2 min Plank</string>
+    <string name="day_26">20 crunches</string>
+    <string name="day_27">20 lunges</string>
+    <string name="day_28">100 jumps on skipping rope</string>
+    <string name="day_29">20 minutes walk</string>
+    <string name="day_30">10 minutes run</string>
+    <string name="day_31">30 push ups</string>
+
+    <string name="about">AmIFit Workout and Step Tracker</string>
+    <string name="version">Version 1.0.0</string>
+    <string name="description">This app is still evolving and I am committed to make it better every day!</string>
+
+    <string name="motivation">I created this app for my beloved husband who is a fitness freak. So here it is. This app is my gift to him.</string>
+    <string name="disclaimer">Author of this app is not a fitness expert and thus take no responsibility whatsoever for any physical/psychological damage ;)</string>
+    <string name="disclaimer_title">Disclaimer!</string>
+
+
+
+
+</resources>

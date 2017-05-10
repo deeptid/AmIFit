@@ -1,0 +1,59 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/todays_workout_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="12dp"
+            android:text="Today's Workout"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_below="@+id/todays_workout_title"
+            android:layout_marginBottom="10dp"
+            android:src="@color/colorPrimary" />
+
+        <com.deepti.amifit.Widgets.NestedListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l1"
+            android:divider="#b5b5b5"
+            android:dividerHeight="0.2dp">
+
+        </com.deepti.amifit.Widgets.NestedListView>
+
+        <ImageView
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_below="@+id/list"
+            android:layout_marginBottom="10dp"
+            android:src="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/congrats"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_below="@+id/l2"
+            android:src="@drawable/congrats6" />
+
+    </RelativeLayout>
+</ScrollView>

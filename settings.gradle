@@ -1,0 +1,1 @@
+include ':app', ':shinobicontrols-android-charts-standard-500-java-1.8.2-3'

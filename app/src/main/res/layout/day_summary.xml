@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/touch_layout"
+        android:background="@drawable/yoga"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="weight"
+            android:id="@+id/todays_weight"
+            android:textSize="35dp"
+            android:layout_below="@+id/no_of_steps"
+            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's Summary"
+            android:id="@+id/todays_title"
+            android:textSize="25dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="steps"
+            android:id="@+id/no_of_steps"
+            android:textSize="40dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/todays_title"
+            android:layout_alignLeft="@+id/todays_weight"
+            android:layout_alignStart="@+id/todays_weight" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Just"
+            android:id="@+id/s1"
+            android:layout_marginLeft="10dp"
+            android:textSize="32dp"
+            android:layout_marginTop="82dp"
+            android:layout_below="@+id/todays_weight" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" steps left for the day"
+            android:id="@+id/remaining_steps_title"
+            android:textSize="30dp"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/remainsteps"
+            android:layout_alignLeft="@+id/todays_title"
+            android:layout_alignStart="@+id/todays_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="steps"
+            android:id="@+id/remainsteps"
+            android:textSize="70dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="13dp"
+            android:layout_below="@+id/s1"
+            android:layout_alignLeft="@+id/s1"
+            android:layout_alignStart="@+id/s1"
+            android:layout_marginLeft="45dp"
+            android:layout_marginStart="45dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+shinobicontrols-android-charts-standard-500-java-1.8.2-3/
+app/src/main/java/com/deepti/amifit/view/MonthlySummary.java
+app/src/main/res/drawable-hdpi/
+app/src/main/res/mipmap*
+app/src/main/res/drawable/
+app/src/main/res/drawable-mdpi/
+app/src/main/res/drawable-xhdpi/
+app/src/main/res/drawable-xxhdpi/

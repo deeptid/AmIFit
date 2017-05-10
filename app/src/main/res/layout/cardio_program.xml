@@ -1,0 +1,290 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:clickable="true"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/cardio_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:text="4 Fat-Blasting Cardio Workouts"
+            android:textSize="25dp" />
+
+
+        <TextView
+            android:id="@+id/jumping_jack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardio_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="1. Jumping Jack Attack!"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/jumping_jack_gif_placer"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/jumping_jack"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/old_jumping_jacks" />
+
+        <!--<Chronometer-->
+            <!--android:id="@+id/jackChronometer"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/jumping_jack_gif_placer"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="#000"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="10dp"-->
+            <!--android:textColor="#f00"-->
+            <!--android:textStyle="bold" />-->
+        <TextView
+            android:id="@+id/add_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jumping_jack_gif_placer"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Add to my workout:"
+            android:textSize="15dp" />
+
+        <com.deepti.amifit.Widgets.MultiSelectionSpinner
+            android:id="@+id/jack_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_title1"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"/>
+        <!--<Spinner-->
+            <!--android:id="@+id/jack_spinner"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/jumping_jack_gif_placer"-->
+            <!--android:textSize="15dp"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="10dp"/>-->
+
+        <TextView
+            android:id="@+id/jumping_rope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jack_spinner"
+            android:layout_marginLeft="10dp"
+            android:text="2. Jumping Rope!"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/jumping_rope_gif_placer"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/jumping_rope"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/jumping_rope" />
+
+        <!--<Chronometer-->
+            <!--android:id="@+id/ropeChronometer"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/jumping_rope_gif_placer"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="#000"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="10dp"-->
+            <!--android:textColor="#f00"-->
+            <!--android:textStyle="bold" />-->
+        <TextView
+            android:id="@+id/add_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jumping_rope_gif_placer"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Add to my workout:"
+            android:textSize="15dp" />
+
+        <com.deepti.amifit.Widgets.MultiSelectionSpinner
+            android:id="@+id/rope_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_title2"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"/>
+
+
+        <TextView
+            android:id="@+id/running"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rope_spinner"
+            android:layout_marginLeft="10dp"
+            android:text="3. Running"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/running_gif_placer"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/running"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/treadmill" />
+
+        <TextView
+            android:id="@+id/add_title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/running_gif_placer"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Add to my workout:"
+            android:textSize="15dp" />
+
+        <com.deepti.amifit.Widgets.MultiSelectionSpinner
+            android:id="@+id/run_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_title3"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"/>
+
+        <!--<Chronometer-->
+            <!--android:id="@+id/runningChronometer"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/running_gif_placer"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="#000"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="10dp"-->
+            <!--android:textColor="#f00"-->
+            <!--android:textStyle="bold" />-->
+
+
+        <TextView
+            android:id="@+id/stairmaster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/run_spinner"
+            android:layout_marginLeft="10dp"
+            android:text="4. Stairmaster"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/stairmaster_gif_placer"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/stairmaster"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/stairmaster" />
+
+        <TextView
+            android:id="@+id/add_title4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stairmaster_gif_placer"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Add to my workout:"
+            android:textSize="15dp" />
+
+        <com.deepti.amifit.Widgets.MultiSelectionSpinner
+            android:id="@+id/stair_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_title4"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"/>
+        <!--<Chronometer-->
+            <!--android:id="@+id/stairmasterChronometer"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/stairmaster_gif_placer"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="#000"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="10dp"-->
+            <!--android:textColor="#f00"-->
+            <!--android:textStyle="bold" />-->
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stair_spinner"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/rounded_button"
+            android:minWidth="200dp"
+            android:minHeight="30dp"
+            android:text="@string/submit"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            tools:targetApi="ice_cream_sandwich" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/submit"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_button"
+            android:minWidth="200dp"
+            android:minHeight="30dp"
+            android:text="@string/cancel"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            tools:targetApi="ice_cream_sandwich" />
+
+
+    </RelativeLayout>
+</ScrollView>

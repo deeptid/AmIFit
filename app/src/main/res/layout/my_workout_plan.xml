@@ -1,0 +1,587 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:clickable="true"
+        android:id="@+id/container_layout">
+
+        <TextView
+            android:id="@+id/my_plan_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="12dp"
+            android:text="My Weekly Workout Plan"
+            android:textSize="30dp" />
+
+        <!--Monday-->
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_above="@+id/monday"
+            android:src="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/monday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/my_plan_title"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:text="Monday"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_below="@+id/monday"
+            android:layout_marginBottom="10dp"
+            android:src="@color/colorPrimary" />
+
+        <com.deepti.amifit.Widgets.NestedListView
+            android:id="@+id/list_monday"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l1"
+            android:divider="#b5b5b5"
+            android:dividerHeight="0.2dp">
+        </com.deepti.amifit.Widgets.NestedListView>
+
+        <!--<ListView-->
+            <!--android:id="@+id/list_monday"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/l1"-->
+            <!--android:divider="#b5b5b5"-->
+            <!--android:dividerHeight="0.2dp" />-->
+
+        <RelativeLayout
+            android:id="@+id/total_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_monday"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_marginBottom="10dp"
+                android:src="#b5b5b5" />
+
+            <TextView
+                android:id="@+id/total_title"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:typeface="sans"
+                android:textSize="18dip"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="60dp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="1 min"
+                android:typeface="sans"
+                android:textColor="#515050"
+                android:textSize="18dip"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="33dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+        <!--Tuesday-->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_below="@+id/total_layout"
+            android:src="@color/colorPrimary"
+            android:layout_marginTop="18dp"
+            android:id="@+id/line1"/>
+
+        <TextView
+            android:id="@+id/tuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/line1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:text="Tuesday"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_below="@+id/tuesday"
+            android:layout_marginBottom="10dp"
+            android:src="@color/colorPrimary" />
+
+        <com.deepti.amifit.Widgets.NestedListView
+            android:id="@+id/list_tuesday"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l2"
+            android:divider="#b5b5b5"
+            android:dividerHeight="0.2dp" />
+
+        <RelativeLayout
+            android:id="@+id/total_layout_tuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_tuesday"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_marginBottom="10dp"
+                android:src="#b5b5b5" />
+
+            <TextView
+                android:id="@+id/total_title_tuesday"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:typeface="sans"
+                android:textSize="18dip"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="60dp" />
+
+            <TextView
+                android:id="@+id/time_tuesday"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="1 min"
+                android:typeface="sans"
+                android:textColor="#515050"
+                android:textSize="18dip"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="33dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+        <!--Wednesday-->
+
+        <ImageView
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_below="@+id/total_layout_tuesday"
+            android:src="@color/colorPrimary"
+            android:layout_marginTop="18dp"/>
+
+        <TextView
+            android:id="@+id/wednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/line2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:text="Wednesday"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/l3"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_below="@+id/wednesday"
+            android:layout_marginBottom="10dp"
+            android:src="@color/colorPrimary" />
+
+        <com.deepti.amifit.Widgets.NestedListView
+            android:id="@+id/list_wednesday"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l3"
+            android:divider="#b5b5b5"
+            android:dividerHeight="0.2dp" />
+
+        <RelativeLayout
+            android:id="@+id/total_layout_wednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_wednesday"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_marginBottom="10dp"
+                android:src="#b5b5b5" />
+
+            <TextView
+                android:id="@+id/total_title_wednesday"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:typeface="sans"
+                android:textSize="18dip"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="60dp" />
+
+            <TextView
+                android:id="@+id/time_wednesday"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="1 min"
+                android:typeface="sans"
+                android:textColor="#515050"
+                android:textSize="18dip"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="33dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+        <!--Thurday-->
+
+        <ImageView
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_below="@+id/total_layout_wednesday"
+            android:src="@color/colorPrimary"
+            android:layout_marginTop="18dp"/>
+
+        <TextView
+            android:id="@+id/thursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/line3"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:text="Thursday"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/l4"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_below="@+id/thursday"
+            android:layout_marginBottom="10dp"
+            android:src="@color/colorPrimary" />
+
+        <com.deepti.amifit.Widgets.NestedListView
+            android:id="@+id/list_thursday"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l4"
+            android:divider="#b5b5b5"
+            android:dividerHeight="0.2dp" />
+
+        <RelativeLayout
+            android:id="@+id/total_layout_thursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_thursday"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_marginBottom="10dp"
+                android:src="#b5b5b5" />
+
+            <TextView
+                android:id="@+id/total_title_thursday"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:typeface="sans"
+                android:textSize="18dip"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="60dp" />
+
+            <TextView
+                android:id="@+id/time_thursday"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="1 min"
+                android:typeface="sans"
+                android:textColor="#515050"
+                android:textSize="18dip"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="33dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+        <!--Friday-->
+        <ImageView
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_below="@+id/total_layout_thursday"
+            android:src="@color/colorPrimary"
+            android:layout_marginTop="18dp"/>
+
+        <TextView
+            android:id="@+id/friday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/line4"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:text="Friday"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/l5"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_below="@+id/friday"
+            android:layout_marginBottom="10dp"
+            android:src="@color/colorPrimary" />
+
+        <com.deepti.amifit.Widgets.NestedListView
+            android:id="@+id/list_friday"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l5"
+            android:divider="#b5b5b5"
+            android:dividerHeight="0.2dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/total_layout_friday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_friday"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_marginBottom="10dp"
+                android:src="#b5b5b5" />
+
+            <TextView
+                android:id="@+id/total_title_friday"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:typeface="sans"
+                android:textSize="18dip"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="60dp" />
+
+            <TextView
+                android:id="@+id/time_friday"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="1 min"
+                android:typeface="sans"
+                android:textColor="#515050"
+                android:textSize="18dip"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="33dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+        <!--Saturday-->
+        <ImageView
+            android:id="@+id/line5"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_below="@+id/total_layout_friday"
+            android:src="@color/colorPrimary"
+            android:layout_marginTop="18dp"/>
+
+        <TextView
+            android:id="@+id/saturday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/line5"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:text="Saturday"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/l6"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_below="@+id/saturday"
+            android:layout_marginBottom="10dp"
+            android:src="@color/colorPrimary" />
+
+        <com.deepti.amifit.Widgets.NestedListView
+            android:id="@+id/list_saturday"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l6"
+            android:divider="#b5b5b5"
+            android:dividerHeight="0.2dp" />
+
+        <RelativeLayout
+            android:id="@+id/total_layout_saturday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_saturday"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_marginBottom="10dp"
+                android:src="#b5b5b5" />
+
+            <TextView
+                android:id="@+id/total_title_saturday"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:typeface="sans"
+                android:textSize="18dip"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="60dp" />
+
+            <TextView
+                android:id="@+id/time_saturday"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="1 min"
+                android:typeface="sans"
+                android:textColor="#515050"
+                android:textSize="18dip"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="33dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+        <!--Sunday-->
+
+        <ImageView
+            android:id="@+id/line6"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_below="@+id/total_layout_saturday"
+            android:src="@color/colorPrimary"
+            android:layout_marginTop="18dp"/>
+
+        <TextView
+            android:id="@+id/sunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/line6"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:text="Sunday"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/l7"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_below="@+id/sunday"
+            android:layout_marginBottom="10dp"
+            android:src="@color/colorPrimary" />
+
+        <com.deepti.amifit.Widgets.NestedListView
+            android:id="@+id/list_sunday"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l7"
+            android:divider="#b5b5b5"
+            android:dividerHeight="0.2dp" />
+
+        <RelativeLayout
+            android:id="@+id/total_layout_sunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_sunday"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_marginBottom="10dp"
+                android:src="#b5b5b5" />
+
+            <TextView
+                android:id="@+id/total_title_sunday"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:typeface="sans"
+                android:textSize="18dip"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="60dp" />
+
+            <TextView
+                android:id="@+id/time_sunday"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="1 min"
+                android:typeface="sans"
+                android:textColor="#515050"
+                android:textSize="18dip"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="33dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

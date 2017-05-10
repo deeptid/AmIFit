@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Steps Settings">
+        <PreferenceScreen
+            android:defaultValue="10:00"
+            android:key="steps_settings"
+            android:summary="@string/pref_steps_time"
+            android:title="@string/pref_change_steps_title">
+            <PreferenceCategory
+                android:key="change_steps_settings"
+                android:title="Steps">
+                <CheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="pref_steps_enable"
+                    android:title="@string/pref_steps_title" />
+                <com.deepti.amifit.Settings.TimePreference
+                    android:defaultValue="10:00"
+                    android:dependency="pref_steps_enable"
+                    android:key="time_steps_key"
+                    android:summary="@string/pref_change_steps_title"
+                    android:title="@string/time_steps_title" />
+                <EditTextPreference
+                    android:defaultValue="@string/text_steps_reminder"
+                    android:dependency="pref_steps_enable"
+                    android:key="steps_reminder_title"
+                    android:summary="@string/text_steps_reminder"
+                    android:title="@string/text_steps_reminder_title" />
+            </PreferenceCategory>
+
+        </PreferenceScreen>
+        <!--<ListPreference-->
+        <!--android:dependency="pref_sync"-->
+        <!--android:key="pref_syncConnectionType"-->
+        <!--android:title="@string/workout_plan"-->
+        <!--android:dialogTitle="@string/workout_plan"-->
+        <!--android:entries="@array/workout_title"-->
+        <!--android:entryValues="@array/cardio_program"-->
+        <!--android:defaultValue="@string/app_name" />-->
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Workout Settings">
+        <PreferenceScreen
+            android:key="workout_settings"
+            android:summary="@string/change_workout_time_default"
+            android:title="@string/pref_change_workout_title">
+            <PreferenceCategory
+                android:key="change_workout_settings"
+                android:title="Workout">
+                <CheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="pref_workout_enable"
+                    android:title="@string/pref_workout_title" />
+                <com.deepti.amifit.Settings.TimePreference
+                    android:dependency="pref_workout_enable"
+                    android:key="time_workout_key"
+                    android:summary="@string/change_workout_time_default"
+                    android:title="@string/time_workout_title" />
+                <EditTextPreference
+                    android:defaultValue="@string/text_workout_reminder"
+                    android:dependency="pref_workout_enable"
+                    android:key="workout_reminder_title"
+                    android:summary="@string/text_workout_reminder"
+                    android:title="@string/text_workout_reminder_title" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Weight Settings">
+        <PreferenceScreen
+            android:key="weight_settings"
+            android:summary="@string/change_weight_time_default"
+            android:title="@string/pref_change_weight_title">
+            <PreferenceCategory
+                android:key="change_weight_settings"
+                android:title="Weight">
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="pref_weight_enable"
+                    android:title="@string/pref_weight_title" />
+                <com.deepti.amifit.Settings.TimePreference
+                    android:dependency="pref_weight_enable"
+                    android:key="time_weight_key"
+                    android:summary="@string/change_weight_time_default"
+                    android:title="@string/time_weight_title" />
+                <EditTextPreference
+                    android:defaultValue="@string/text_weight_reminder"
+                    android:dependency="pref_weight_enable"
+                    android:key="weight_reminder_title"
+                    android:summary="@string/text_weight_reminder"
+                    android:title="@string/text_weight_reminder_title" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="Break">
+        <PreferenceScreen
+            android:key="walk_settings"
+            android:summary="@string/change_walk_time_default"
+            android:title="@string/pref_change_walk_title">
+            <PreferenceCategory
+                android:key="change_walk_settings"
+                android:title="Walk">
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="pref_walk_enable"
+                    android:title="@string/pref_walk_title" />
+                <!--<com.deepti.amifit.Settings.TimePreference-->
+                    <!--android:dependency="pref_walk_enable"-->
+                    <!--android:key="time_walk_key"-->
+                    <!--android:summary="@string/change_walk_time_default"-->
+                    <!--android:title="@string/time_walk_title" />-->
+
+                <ListPreference
+                    android:defaultValue="@string/default_walk_time"
+                    android:dependency="pref_walk_enable"
+                    android:dialogTitle="@string/time_walk_title"
+                    android:entries="@array/walk_time"
+                    android:entryValues="@array/walk_time"
+                    android:key="time_walk_key"
+                    android:title="@string/time_walk_title" />
+                <EditTextPreference
+                    android:defaultValue="@string/text_walk_reminder"
+                    android:dependency="pref_walk_enable"
+                    android:key="walk_reminder_title"
+                    android:summary="@string/text_walk_reminder"
+                    android:title="@string/text_walk_reminder_title" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="water_settings"
+            android:summary="@string/change_water_time_default"
+            android:title="@string/pref_change_water_title">
+            <PreferenceCategory
+                android:key="change_water_settings"
+                android:title="Water">
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="pref_water_enable"
+                    android:title="@string/pref_water_title" />
+                <!--<com.deepti.amifit.Settings.TimePreference-->
+                    <!--android:dependency="pref_water_enable"-->
+                    <!--android:key="time_water_key"-->
+                    <!--android:summary="@string/change_water_time_default"-->
+                    <!--android:title="@string/time_water_title" />-->
+                <ListPreference
+                    android:defaultValue="@string/default_water_time"
+                    android:dependency="pref_water_enable"
+                    android:dialogTitle="@string/time_water_title"
+                    android:entries="@array/walk_time"
+                    android:entryValues="@array/water_time"
+                    android:key="time_water_key"
+                    android:title="@string/time_water_title" />
+                <EditTextPreference
+                    android:defaultValue="@string/text_water_reminder"
+                    android:dependency="pref_water_enable"
+                    android:key="water_reminder_title"
+                    android:summary="@string/text_water_reminder"
+                    android:title="@string/text_water_reminder_title" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+
+        <!--<PreferenceCategory android:title="Take a walk ">-->
+
+        <!--</PreferenceCategory>-->
+
+        <!--<PreferenceCategory android:title="Drink a glass of water">-->
+
+        <!--</PreferenceCategory>-->
+
+    </PreferenceCategory>
+
+    <!--<PreferenceCategory android:title="Add a Pill">-->
+
+    <!--</PreferenceCategory>-->
+
+
+</PreferenceScreen>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="2dp"
+    android:paddingRight="0dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:id="@+id/fragment_favourite_workouts"
+    android:background="#ffffff">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_workout_lists"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:id="@+id/fav_workout_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:verticalSpacing="0dp"
+            android:horizontalSpacing="0dp"
+            android:layout_alignParentTop="true" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/full_screen_workout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></FrameLayout>
+
+
+</RelativeLayout>

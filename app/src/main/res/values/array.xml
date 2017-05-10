@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="workout_icons">
+        <item>@drawable/cardio</item>
+        <item>@drawable/home_workout</item>
+        <item>@drawable/abs</item>
+        <item>@drawable/ball</item>
+        <item>@drawable/jillian</item>
+        <item>@drawable/gym</item>
+    </array>
+
+    <string-array name="workout_title">
+        <item>Cardio workout</item>
+        <item>Home workout</item>
+        <item>Abs workout</item>
+        <item>Exercise Ball Workout</item>
+        <item>Full Body Workout</item>
+        <item>Gym workout</item>
+    </string-array>
+
+    <string-array name="cardio_program">
+        <item>Jumping Jacks</item>
+        <item>Jumping Rope</item>
+        <item>Running</item>
+        <item>Stairmaster</item>
+    </string-array>
+
+    <string-array name="cardio_program_time">
+        <item>1</item>
+        <item>1</item>
+        <item>20</item>
+        <item>20</item>
+    </string-array>
+
+    <string-array name="home_program">
+        <item>Divebombers</item>
+        <item>Lunges</item>
+        <item>Burpees</item>
+        <item>Mountain Climbers</item>
+        <item>Jumping Jacks</item>
+        <item>squats</item>
+        <item>Chair Dips</item>
+    </string-array>
+
+    <string-array name="home_program_time">
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="abs_program">
+        <item>Plank</item>
+        <item>Spiderman Pushups</item>
+        <item>Leg Raises</item>
+        <item>Plank Jack</item>
+        <item>Crunches</item>
+        <item>Pilates Hundred</item>
+        <item>Mountain Climber Twist</item>
+        <item>Bicycle Crunches</item>
+    </string-array>
+
+    <string-array name="abs_program_time">
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="fullbody_program">
+        <item>30 Day Shred: Level 1</item>
+        <item>30 Day Shred: Level 2</item>
+        <item>30 Day Shred: Level 3</item>
+    </string-array>
+
+    <string-array name="fullbody_program_time">
+        <item>30</item>
+        <item>30</item>
+        <item>30</item>
+    </string-array>
+
+
+    <string-array name="ball_program">
+        <item>CoreAndUpper</item>
+        <item>AbsAndWeight</item>
+        <item>CoreAndLegs</item>
+    </string-array>
+
+    <string-array name="ball_program_time">
+        <item>16</item>
+        <item>22</item>
+        <item>15</item>
+    </string-array>
+
+    <string-array name="gym_program">
+        <item>gym1</item>
+        <item>gym2</item>
+    </string-array>
+
+    <string-array name="gym_program_time">
+        <item>12</item>
+        <item>11</item>
+    </string-array>
+
+    <string-array name="workout_desc">
+        <item>Boost your metabolism, fight depression and much more!</item>
+        <item>Full body workouts that can do at-home to get in shape</item>
+        <item>Time to push your abs to exhaustion and fight the flab</item>
+        <item>Complete workout plan designed for to use at your local gym</item>
+        <item>Ready to get in shape, tone up, and lose weight</item>
+        <item>Take your workout to the next level with an exercise ball that engages your entire body</item>
+    </string-array>
+
+    <string-array name="workout_type">
+        <item>cardio</item>
+        <item>home</item>
+        <item>abs</item>
+        <item>ball</item>
+        <item>fullbody</item>
+        <item>gym</item>
+    </string-array>
+
+
+    <string-array name="add_to_my_program">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <string-array name="walk_time">
+        <item>Every 1 hour</item>
+        <item>Every 2 hour</item>
+        <item>Every 3 hour</item>
+        <item>Every 4 hour</item>
+    </string-array>
+
+    <string-array name="water_time">
+        <item>Every 1 hour</item>
+        <item>Every 2 hour</item>
+        <item>Every 3 hour</item>
+        <item>Every 4 hour</item>
+    </string-array>
+
+    <string-array name="challenge_text">
+        <item>30 push ups</item>
+        <item>30 squats</item>
+        <item>2 min Plank</item>
+        <item>20 crunches</item>
+        <item>20 lunges</item>
+        <item>100 jumps on skipping rope</item>
+        <item>20 minutes walk</item>
+        <item>10 minutes run</item>
+        <item>30 push ups</item>
+        <item>20 seconds side plank</item>
+        <item>30 seconds Superman</item>
+        <item>30 push ups</item>
+        <item>30 squats</item>
+        <item>2 min Plank</item>
+        <item>20 crunches</item>
+        <item>20 lunges</item>
+        <item>100 jumps on skipping rope</item>
+        <item>20 minutes walk</item>
+        <item>10 minutes run</item>
+        <item>30 push ups</item>
+        <item>20 seconds side plank</item>
+        <item>30 seconds Superman</item>
+        <item>30 push ups</item>
+        <item>30 squats</item>
+        <item>2 min Plank</item>
+        <item>20 crunches</item>
+        <item>20 lunges</item>
+        <item>100 jumps on skipping rope</item>
+        <item>20 minutes walk</item>
+        <item>10 minutes run</item>
+        <item>30 push ups</item>
+    </string-array>
+
+
+</resources>
